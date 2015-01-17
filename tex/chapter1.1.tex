@@ -1,0 +1,76 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
+
+% Chapter 1
+
+
+%----------------------------------------------------------------------------------------
+
+\chapter{The Field of Computational Fluid Dynamics}
+
+The field of Computational Fluid Dynamics (CFD) is widely utilized in science, engineering and even in visual effects for feature film. This book gives a introduction to the topic of CFD for interested readers working in VFX. First of all to define more clearly what the term CFD means, we start of with the quote:
+
+\begin{quote}
+\emph{"CFD (computational fluid dynamics) is a set of numerical methods applied to obtain
+approximate solutions of problems of fluid dynamics and heat transfer."}p.~1 Zikanov2010. 
+\end{quote}
+
+A comprehensive quote that includes the main subjects of CFD: \textbf{Numerical methods}, \textbf{approximation}, \textbf{practical problems}.  In the first place, as mentioned, \emph{"CFD (...) is a set of numerical methods (...)"}. In other words CFD is based in the realms of mathematics and numerics. To understand the behaviour of fluids and predict it in known circumstances the reader needs to have a strong mathematical background and furthermore be apple to transfer this knowledge into practical computation. Second \emph{"(...) obtain approximate solutions (...)"} refers to the nature of problem modelling and solution. Given a fluid dynamic problem (e.g. flow of water in a pipe), there will be always a level of abstraction involved in transferring the real world problem into a computable model. Above that many more levels of approximations are involved, which are due to current limits of science and the discrete nature of computers. Finally \emph{"(...) problems of fluid dynamics and heat transfer."} outlines the very purpose of CFD, solving real world physical fluid problems. As we will see in the following Section, the wide applications have in comment that a real fluid problem needs to be solved and this often isn't feasible with practical model making or other techniques. Therefore CFD can be understood to be a modern \emph{tool} to tackle fluid problems with the help of computers. This three aspects of CFD will be discussed in this book, albeit in a different order and with a focus on the topic of discretization. In the following Sections of this Chapter the typical applications of CFD are briefly presented and afterwards the focus of this book is discussed in more detail before presenting the book's content outline. 
+
+\section{Typical applications}
+
+The demand for analyzing and/or predicting fluid flows is increasing in the fields of
+engineering and science. Following inchoate list includes some evident industrial and science application examples and also some that might not come into mind when thinking about CFD. For further reading to each field some references are given.
+
+\begin{itemize}
+\item Aeroacoustics : Analysis of turbulent airflow around automobiles to reduce the noise generation and increase passenger comfort Naugolnych1988.  
+\item Aerodynamics: Optimization of the plane's airfoil design to reduce overall fuel consumption Anderson2010.
+\item Atmospheric sciences: Weather prediction (shorterm) Warner2010 and climate research (longterm) McGuffie2005.
+\item Building Engineering: Air flow simulations with models of planned buildings to optimize heat transfer Underwood2008.
+\item Chemistry: Combustion analysis for internal fuel engines (e.g. car engine) to determine the best ignition frequency for a certain octane rating Shi2011.
+\item Civil Engineering: Fluid simulations to determine the consequences of dam breaks Bates2005 .
+\item Hemodynamics: Flow analysis of blood in the human heart to determine better ways to treat high blood pressure Guccione2009.
+\item Magnetohydrodynamics: Simulation of plasma in models of new thermonuclear fusion reactors Goedbloed2010. 
+\item Mechanical Engineering: Flow analysis to optimize the design of turbomachinery (e.g. turbines) Elder2003.
+\end{itemize}
+
+\section{Focus of this Book}
+
+This book gives a broad overview on the topic of CFD for Visual Effects. But it will focus on the mesh-based and mesh-free methods and will in great detail describe latter. Both of these methods are discretization methods. Revisiting the introduction, they can be allocated under the terms numerical methods and approximation. This book emphasis the mathematics and numerics of these methods. Furthermore it will pick out the Smoothed Particle Hydrodynamics (SPH) as a representative of mesh-free methods and will compare it to the mesh-based Finite Elements Method (FEM). Throughout the entire book a unsteady, time-dependend and evolving fluid is assumed. ... we will learn what this means....
+
+
+\section{Content Outline and structure}
+
+This free book provides a comprehensive introduction and overview of computational fluid dynamics. While it focuses on the modern mesh-free SPH approach, the classical mesh based methods like FEM are also explained. The premier goal is to give a novice reader a basic understanding of CFD. The first question that needs to be answered in order to structure this book is: \emph{What are the vital parts of CFD?} 
+Considering this book was first written for computer scientist who often need to understand a new subject in order to implement it, a more approach based question
+could be easier to answer: \emph{What are the vital parts of CFD that a C.s undergrad needs to understand in order to implement a CFD system?}
+
+To answer this question this book takes a look at the main steps of a general CFD problem solving approach. Since the focus of this book is on discretization methods, the vital parts for undergrad to understand lie not so much in physics but in the fundamental mathematical ideas. Therefore this book introduction briefly dives into the physical phenomena of fluid dynamics. The presented introduction from Chapter 2 through Chapter 3 also emphasises the mathematics more than the physics.
+ 
+The text is organized in five Chapters that are outlined as follows:
+
+\textbf{Chapters} 
+\begin{itemize}
+
+\item Chapter 1: Introduction and focus of this book
+\item Chapter 2: The physical world of fluids including important terms 
+\item Chapter 3: Numerical methods that include the most important mathematical
+laws around fluid dynamics
+\item Chapter 4: The dominant mesh-based methods
+\item Chapter 5: Mesh-free methods
+
+\end{itemize}
+
+
+\section{Conventions}
+
+Throughout this book the Harvard referencing style is used for quotes and general literature references. 
+
+\section{Further reading}
+Along this book in each Chapter several references are given to a specific topic. For a comprehensive start with German literature Laurien2009 is a good choice.
